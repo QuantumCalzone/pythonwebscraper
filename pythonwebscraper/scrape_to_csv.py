@@ -20,7 +20,7 @@ def scrape(url, web_scraper_dict):
             result = tree.xpath(xpath)
             result = result[0]
             if result is not None:
-                print(result.text)
+                # print(result.text)
                 results[name] = result.text
                 break
 
