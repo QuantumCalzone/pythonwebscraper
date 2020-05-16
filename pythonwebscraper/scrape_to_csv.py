@@ -18,6 +18,10 @@ def scrape(url, web_scraper_dict):
         # print(f"name: {name} xpaths: {xpaths}")
         for xpath in xpaths:
             result = tree.xpath(xpath)
+
+            if len(result) == 0:
+                return None
+
             result = result[0]
             if result is not None:
                 # print(result.text)
