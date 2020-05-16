@@ -25,7 +25,7 @@ def scrape(url, web_scraper_dict):
             result = result[0]
             if result is not None:
                 # print(result.text)
-                results[name] = result.text
+                results[name] = result
                 break
 
     return results
