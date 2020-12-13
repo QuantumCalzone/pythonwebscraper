@@ -198,3 +198,4 @@ fabric.properties
 
 # Custom
 .idea/
+credentials.json
